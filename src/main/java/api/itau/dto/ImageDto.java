@@ -1,13 +1,15 @@
 package api.itau.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Image {
+@Builder
+public class ImageDto {
 
     private String url;
 }

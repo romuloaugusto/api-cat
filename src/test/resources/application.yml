@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    database: HSQL
+    show-sql: true
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+      path: /h2console
+
+cloud:
+  aws:
+    region:
+      static: us-east-2
+      auto: false
+    credentials:
+      access-key: AKIATJTPJCPOEFQXJRHS
+      secret-key: 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
+    end-point:
+      uri-queue-request: https://sqs.us-east-2.amazonaws.com/226792903644/nao-processada
+      uri-queue-response: https://sqs.us-east-2.amazonaws.com/226792903644/queue-response
+
+cat-api-url: https://api.thecatapi.com/v1
+
+x-api-key: 80628546-a60b-419c-8e8a-c4bb2532842a
+
+url-cpf-integration: "https://user-info.herokuapp.com/users"
+
+#timer-scheduled: 86400000
+timer-scheduled: 120000

@@ -10,7 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class BreedDto {
 
-    private String id;
+    @JsonProperty("id")
+    private String externalId;
 
     private String name;
 
@@ -28,6 +29,6 @@ public class BreedDto {
     @JsonProperty("wikipedia_url")
     private String wikipediaUrl;
 
-    private Image image;
+    private ImageDto image;
 
 }
