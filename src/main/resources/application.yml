@@ -33,8 +33,7 @@ info:
 
 url-cpf-integration: "https://user-info.herokuapp.com/users"
 
-#timer-scheduled: 86400000
-timer-scheduled: 120000
+timer-scheduled: 86400000
 
 cloud:
   aws:
